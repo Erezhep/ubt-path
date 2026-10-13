@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ҰБТ жолы: Химия – Биология</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,600;0,800;1,500&family=Noto+Sans:wght@400;600&display=swap">
+<style>
+:root{--bg:#f2f7f4;--ink:#11302c;--mut:#5b7570;--card:#fff;--line:#d5e3dd;--pink:#e23d78;--teal:#14a38b;--amber:#e99a1f;--violet:#6a4bd8;--red:#e8504a;
+--serif:'Noto Serif',Georgia,serif;--sans:'Noto Sans',system-ui,sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1f1d;--ink:#e6f3ef;--mut:#93b3ab;--card:#14302c;--line:#25463f}}
+:root[data-theme="dark"]{--bg:#0d1f1d;--ink:#e6f3ef;--mut:#93b3ab;--card:#14302c;--line:#25463f}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.55 var(--sans)}
+.wrap{max-width:980px;margin:0 auto;padding:0 18px 60px}
+h1,h2{font-family:var(--serif);margin:0}
+h2{font-size:1.5rem;margin:44px 0 14px}
+.note{background:var(--pink);color:#fff;padding:18px 18px;cursor:pointer;border:0;width:100%;text-align:left;font:italic 500 clamp(1.15rem,3.4vw,1.6rem)/1.35 var(--serif)}
+.note:focus-visible,summary:focus-visible,input:focus-visible,textarea:focus-visible,button:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+.note span{display:block;max-width:980px;margin:0 auto}
+.hero{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:30px}
+.hero h1{font-size:clamp(1.8rem,5.5vw,3rem);line-height:1.1;font-weight:800}
+.hero p{margin:8px 0 0;color:var(--mut);max-width:44ch}
+#dna{flex:none;width:90px;height:150px}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}
+.tile{background:var(--card);border:2px solid var(--c);border-radius:6px;padding:12px 14px 14px;position:relative}
+.tile.next{box-shadow:6px 6px 0 var(--c)}
+.tile .sym{font:800 2.1rem/1 var(--serif);color:var(--c)}
+.tile .nm{font-size:.85rem;color:var(--mut);margin-top:2px}
+.tile .d{font:800 clamp(2.4rem,8vw,3.6rem)/1 var(--serif);margin-top:10px}
+.tile .d small{font:600 .9rem var(--sans);color:var(--mut)}
+.tile .t{font-variant-numeric:tabular-nums;color:var(--mut);font-size:.9rem}
+.tile .dt{font-size:.8rem;color:var(--mut);margin-top:4px}
+.big{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.big b{font:800 clamp(3rem,10vw,5rem)/1 var(--serif)}
+.big span{color:var(--mut)}
+.ph{position:relative;height:26px;border-radius:13px;margin:46px 0 58px;background:linear-gradient(90deg,var(--red) 0%,var(--amber) 50%,var(--teal) 89%,var(--violet) 100%)}
+.ph .rest{position:absolute;top:0;right:0;bottom:0;border-radius:0 13px 13px 0;background:var(--bg);opacity:.82;transition:left 1.2s ease}
+.ph i{position:absolute;top:-6px;bottom:-6px;width:2px;background:var(--ink)}
+.ph em{position:absolute;font:normal .78rem/1.2 var(--sans);white-space:nowrap;transform:translateX(-50%)}
+.ph em.u{bottom:36px}.ph em.l{top:36px}
+.ph .you{position:absolute;top:-9px;width:44px;height:44px;margin-left:-22px;border-radius:50%;background:var(--card);border:4px solid var(--ink);display:grid;place-items:center;font:800 .9rem var(--serif);transition:left 1.2s ease}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-top:6px solid var(--c);border-radius:4px;padding:14px 16px}
+.card h3{margin:0;font:600 1.1rem var(--serif)}
+.card .sc{display:flex;justify-content:space-between;align-items:baseline;color:var(--mut);font-size:.9rem}
+.card .sc b{font:800 1.9rem var(--serif);color:var(--ink)}
+.card svg{width:100%;height:auto;display:block;margin-top:6px}
+.card p{margin:4px 0 0;font-size:.85rem;color:var(--mut)}
+details.sub{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--c);border-radius:4px;margin-bottom:10px}
+summary{cursor:pointer;padding:12px 16px;font:600 1.05rem var(--serif);display:flex;justify-content:space-between;gap:10px;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary span{font:600 .85rem var(--sans);color:var(--mut)}
+.tp{padding:0 16px 12px;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:4px 18px}
+.tp label{display:flex;gap:10px;align-items:flex-start;padding:5px 0;cursor:pointer}
+.tp input{accent-color:var(--c);width:20px;height:20px;margin-top:2px;flex:none}
+.tp label.on{color:var(--mut);text-decoration:line-through}
+.set{background:var(--card);border:1px dashed var(--line);border-radius:4px;padding:14px 16px;margin-top:40px}
+.set summary{padding:0}
+.f{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:12px}
+.f label{font-size:.85rem;color:var(--mut);display:grid;gap:3px}
+input[type=text],input[type=date],input[type=number],textarea{font:inherit;padding:8px;border:1px solid var(--line);border-radius:4px;background:var(--bg);color:var(--ink);width:100%}
+.set button{margin-top:12px;font:inherit;padding:8px 14px;border-radius:4px;border:1px solid var(--line);background:var(--bg);color:var(--ink);cursor:pointer}
+.foot{color:var(--mut);font-size:.8rem;margin-top:16px}
+@media(max-width:620px){.tiles{grid-template-columns:1fr}.tile{display:grid;grid-template-columns:auto 1fr;gap:0 16px}.tile .d{margin:0;grid-row:1/4;grid-column:2;text-align:right;align-self:center}#dna{display:none}}
+@media(prefers-reduced-motion:reduce){.ph .rest,.ph .you{transition:none}}
+</style>
+</head>
+<body>
+<button class="note" id="note" aria-live="polite"><span id="nt"></span></button>
+<div class="wrap">
+<div class="hero">
+ <div><h1 id="h1"></h1><p>Химия мен биология — тірі табиғаттың тілі. Әр күн сол тілді бір қадам жақсырақ білуге береді.</p></div>
+ <svg id="dna" viewBox="0 0 90 150" aria-hidden="true"></svg>
+</div>
+<div class="tiles" id="tiles"></div>
+
+<h2>Жол: бастапқы нүктеден мақсатқа дейін</h2>
+<div class="big"><b id="tot"></b><span id="tsub"></span></div>
+<div class="ph" id="ph" aria-label="Жалпы балл шкаласы"></div>
+
+<h2>Әр пән бойынша</h2>
+<div class="grid" id="subs"></div>
+
+<h2>Қайталайтын тақырыптар</h2>
+<div id="tops"></div>
+
+<details class="set"><summary>Баптау: күндер, балдар, жазбалар</summary>
+ <div class="f" id="fd"></div><div class="f" id="fs"></div>
+ <label class="f" style="display:grid"><span style="font-size:.85rem;color:var(--mut)">Жоғарғы жазбалар (әр жол бөлек, {name} — есім)</span><textarea id="fm" rows="5"></textarea></label>
+ <button id="rs">Бастапқы күйге қайтару</button>
+</details>
+<p class="foot">Күндер шамамен алынған: нақты ҰБТ күндерін Ұлттық тестілеу орталығынан тексеріп, «Баптау» бөлімінде өзгертіңіз. Мақсаттар мен аралық нүктелер жоспарлау үшін, ресми болжам емес.</p>
+</div>
+<script>
+var DEF={name:'Мадина',msgs:['{name}, саған сенеміз!','{name}, тоқтама! 130 жинайсың.','Бүгінгі бір тақырып — ертеңгі бір балл.','Химия мен биология саған бағынады, {name}.','Кішкентай қадамдар үлкен нәтижеге апарады.'],
+dates:{jan:'2027-01-10',mar:'2027-03-10',main:'2027-05-10'},cur:{hist:9,read:6,math:7,bio:12,chem:16},done:{}};
+var SUB=[
+{id:'hist',n:'Қазақстан тарихы',max:20,st:9,go:18,c:'#c0792b',pl:[9,14,17,18,18],tp:['Ежелгі дәуір және сақтар','Ғұндар және ерте түркі мемлекеттері','Түркі қағанаттары','Қарахан және Қыпшақ дәуірі','Алтын Орда','Қазақ хандығының құрылуы','Жоңғар шапқыншылығы','Ресей империясы құрамында','Алаш қозғалысы, 1917–1920 жж.','Кеңестік дәуір: ұжымдастыру, соғыс','Тәуелсіздік және қазіргі Қазақстан']},
+{id:'read',n:'Оқу сауаттылығы',max:10,st:6,go:9,c:'#6a4bd8',pl:[6,7.5,8.5,9,9],tp:['Негізгі ой мен тақырыпты табу','Автор позициясы және дәлел','Мәтін түрлері мен стильдер','Контекстен сөз мағынасын анықтау']},
+{id:'math',n:'Математикалық сауаттылық',max:10,st:7,go:8,c:'#e99a1f',pl:[7,7.5,8,8,8],tp:['Пайыз және пропорция','Жылдамдық, уақыт, қашықтық','Диаграмма мен кесте оқу','Бірліктерді аудару','Орташа мән және қарапайым ықтималдық','Мәтінді есеп: теңдеу құру']},
+{id:'bio',n:'Биология',max:50,st:12,go:45,c:'#e23d78',pl:[12,22,34,40,45],tp:['Жасуша құрылысы, органоидтар','Мембрана және зат алмасу','Фотосинтез және тыныс алу','ДНҚ, РНҚ, белок биосинтезі','Митоз және мейоз','Онтогенез','Мендель заңдары және есептер','Тіркесу, жыныспен тіркескен белгілер','Адам: қан айналым, тыныс алу','Адам: ас қорыту, зәр шығару','Адам: жүйке, эндокриндік, сезім мүшелері','Ботаника: мүшелер және жүйелеу','Зоология: жануарлар типтері','Эволюция','Экология және биосфера']},
+{id:'chem',n:'Химия',max:50,st:16,go:45,c:'#14a38b',pl:[16,30,38,42,45],tp:['Атом құрылысы, периодтық заң','Химиялық байланыс','Зат мөлшері (моль) және есептер','Газ заңдары','Реакция түрлері, тотығу-тотықсыздану','Электролиттік диссоциация, ион алмасу','Ерітінділер: концентрация, pH, гидролиз','Реакция жылдамдығы, тепе-теңдік','Металдар және бейметалдар','Оксид, қышқыл, негіз, тұз','Электролиз және гальваникалық элементтер','Көмірсутектер','Оттекті органикалық қосылыстар','Азотты қосылыстар, полимерлер','Қоспа, шығым, формула есептері']}];
+var S,mi=0,$=function(i){return document.getElementById(i)};
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function load(){try{var r=localStorage.getItem('ubt-v1');if(r){var o=JSON.parse(r);return Object.assign({},DEF,o,{dates:Object.assign({},DEF.dates,o.dates),cur:Object.assign({},DEF.cur,o.cur)})}}catch(e){}return JSON.parse(JSON.stringify(DEF))}
+function save(){try{localStorage.setItem('ubt-v1',JSON.stringify(S))}catch(e){}}
+function msg(){var m=S.msgs.filter(Boolean);if(!m.length)m=DEF.msgs;$('nt').textContent=m[mi%m.length].replace(/\{name\}/g,S.name)}
+function tiles(){var T=[['Қаң','Қаңтар ҰБТ','jan','#14a38b'],['Нау','Наурыз ҰБТ','mar','#6a4bd8'],['ҰБТ','Негізгі ҰБТ','main','#e23d78']];var now=Date.now(),nx=-1;
+ T.forEach(function(t,i){var d=new Date(S.dates[t[2]]+'T09:00:00').getTime();if(nx<0&&d>now)nx=i});
+ $('tiles').innerHTML=T.map(function(t,i){var d=new Date(S.dates[t[2]]+'T09:00:00').getTime(),ms=Math.max(0,d-now),dd=Math.floor(ms/864e5),h=Math.floor(ms%864e5/36e5),m=Math.floor(ms%36e5/6e4),s=Math.floor(ms%6e4/1e3);
+ return '<div class="tile'+(i==nx?' next':'')+'" style="--c:'+t[3]+'"><div><div class="sym">'+t[0]+'</div><div class="nm">'+t[1]+'</div></div><div class="d">'+dd+' <small>күн</small></div><div class="t">'+(ms?h+' сағ '+m+' мин '+s+' с':'өтті')+'</div><div class="dt">'+new Date(S.dates[t[2]]).toLocaleDateString('kk-KZ',{day:'numeric',month:'long',year:'numeric'})+(i==nx?' (келесі)':'')+'</div></div>'}).join('')}
+function total(){return SUB.reduce(function(a,s){return a+(+S.cur[s.id]||0)},0)}
+function prog(){var t=total(),P=function(v){return v/140*100+'%'};
+ var mk=[[50,'бастау','l'],[70,'медицина шегі','u'],[125,'мақсат 125','u'],[130,'арман 130','l']];
+ $('tot').textContent=t;$('tsub').textContent='балл қазір · бастау 50 · мақсат 125 · қалды +'+Math.max(0,125-t);
+ $('ph').innerHTML='<div class="rest" style="left:'+P(t)+'"></div>'+mk.map(function(m){return '<i style="left:'+P(m[0])+'"></i><em class="'+m[2]+'" style="left:'+P(m[0])+'">'+m[0]+' '+m[1]+'</em>'}).join('')+'<div class="you" style="left:'+P(t)+'">'+t+'</div>'}
+function chart(s){var W=300,H=96,px=24,x0=px,x1=W-px,y=function(v){return H-16-(v/s.max)*(H-30)};
+ var ds=['2026-10-14','2026-12-15','2027-03-15','2027-04-15',S.dates.main],ts=ds.map(function(d){return new Date(d).getTime()}),a=ts[0],b=ts[4],X=function(t){return x0+(t-a)/(b-a)*(x1-x0)};
+ var pts=s.pl.map(function(v,i){return X(ts[i])+','+y(v)}).join(' '),cx=Math.min(x1,Math.max(x0,X(Date.now()))),cur=+S.cur[s.id]||0;
+ return '<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="'+s.n+' жоспары"><line x1="'+x0+'" x2="'+x1+'" y1="'+y(s.go)+'" y2="'+y(s.go)+'" stroke="'+s.c+'" stroke-dasharray="4 4" opacity=".6"/><polyline points="'+pts+'" fill="none" stroke="'+s.c+'" stroke-width="3" stroke-linejoin="round" opacity=".55"/>'+s.pl.map(function(v,i){return '<circle cx="'+X(ts[i])+'" cy="'+y(v)+'" r="3" fill="'+s.c+'" opacity=".55"/>'}).join('')+'<circle cx="'+cx+'" cy="'+y(cur)+'" r="7" fill="var(--card)" stroke="var(--ink)" stroke-width="3"/><text x="'+x0+'" y="'+(H-2)+'" font-size="9" fill="var(--mut)">қазір</text><text x="'+x1+'" y="'+(H-2)+'" font-size="9" fill="var(--mut)" text-anchor="end">негізгі ҰБТ</text><text x="'+(x1)+'" y="'+(y(s.go)-4)+'" font-size="9" fill="var(--mut)" text-anchor="end">мақсат '+s.go+'</text></svg>'}
+function subs(){$('subs').innerHTML=SUB.map(function(s){var c=+S.cur[s.id]||0,left=Math.max(0,s.go-c);return '<div class="card" style="--c:'+s.c+'"><h3>'+s.n+'</h3><div class="sc"><span>қазір / '+s.max+'</span><b>'+c+'</b></div>'+chart(s)+'<p>Бастау '+s.st+' → мақсат '+s.go+'. '+(left?'Қалды +'+left+' балл.':'Мақсатқа жеттің!')+' Сызық — жоспар, дөңгелек — қазіргі балл.</p></div>'}).join('')}
+function tops(){var o=$('tops'),open={};o.querySelectorAll('details').forEach(function(d){open[d.dataset.id]=d.open});
+ o.innerHTML=SUB.map(function(s){var n=s.tp.filter(function(_,i){return S.done[s.id+i]}).length;return '<details class="sub" data-id="'+s.id+'" style="--c:'+s.c+'"'+(open[s.id]?' open':'')+'><summary>'+s.n+'<span>'+n+' / '+s.tp.length+' қайталанды</span></summary><div class="tp">'+s.tp.map(function(t,i){var k=s.id+i;return '<label class="'+(S.done[k]?'on':'')+'"><input type="checkbox" data-k="'+k+'"'+(S.done[k]?' checked':'')+'>'+t+'</label>'}).join('')+'</div></details>'}).join('')}
+function form(){$('fd').innerHTML=[['jan','Қаңтар ҰБТ'],['mar','Наурыз ҰБТ'],['main','Негізгі ҰБТ']].map(function(d){return '<label>'+d[1]+'<input type="date" data-d="'+d[0]+'" value="'+S.dates[d[0]]+'"></label>'}).join('')+'<label>Есім<input type="text" id="nm" value="'+esc(S.name)+'"></label>';
+ $('fs').innerHTML=SUB.map(function(s){return '<label>'+s.n+' (қазір, макс '+s.max+')<input type="number" min="0" max="'+s.max+'" data-s="'+s.id+'" value="'+(+S.cur[s.id]||0)+'"></label>'}).join('');$('fm').value=S.msgs.join('\n')}
+function head(){$('h1').textContent=S.name+', ҰБТ-ға дейін'}
+function dna(){var p='',i,y,a,b;for(i=0;i<15;i++){y=6+i*9.6;a=45+Math.sin(i*.55)*32;b=90-a;p+='<line x1="'+a+'" x2="'+b+'" y1="'+y+'" y2="'+y+'" stroke="'+(i%2?'#e99a1f':'#14a38b')+'" stroke-width="3" opacity=".7"/><circle cx="'+a+'" cy="'+y+'" r="5" fill="#e23d78"/><circle cx="'+b+'" cy="'+y+'" r="5" fill="#6a4bd8"/>'}$('dna').innerHTML=p}
+function all(){head();msg();tiles();prog();subs();tops()}
+S=load();form();dna();all();
+$('note').onclick=function(){mi++;msg()};
+document.addEventListener('change',function(e){var t=e.target;if(t.dataset.k){S.done[t.dataset.k]=t.checked;save();tops()}});
+document.addEventListener('input',function(e){var t=e.target;if(t.dataset.d){S.dates[t.dataset.d]=t.value||DEF.dates[t.dataset.d];tiles();subs()}
+ else if(t.dataset.s){var s=SUB.filter(function(x){return x.id==t.dataset.s})[0];S.cur[s.id]=Math.min(s.max,Math.max(0,+t.value||0));prog();subs()}
+ else if(t.id=='nm'){S.name=t.value||'Мадина';head();msg()}else if(t.id=='fm'){S.msgs=t.value.split('\n');msg()}else return;save()});
+$('rs').onclick=function(){S=JSON.parse(JSON.stringify(DEF));save();form();all()};
+setInterval(tiles,1000);
+</script>
+</body>
+</html>
